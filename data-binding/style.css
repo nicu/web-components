@@ -1,0 +1,38 @@
+body {
+  background-color: #fff000;
+}
+
+button {
+  background-color: #22acff;
+  border: 2px solid black;
+  color: black;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.bws-card {
+  background-color: #252525;
+  color: #dadada;
+  border-radius: 4px;
+  padding: 16px;
+  width: 400px;
+  box-shadow: 2px 2px 4px 0px #888888;
+  display: flex;
+  font-family: sans-serif;
+  margin-bottom: 8px;
+}
+
+.bws-card__picture {
+  border-radius: 50%;
+}
+
+.bws-card__text {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bws-card__email {
+  color: #22acff;
+}

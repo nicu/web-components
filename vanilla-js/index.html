@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+  <title>Web components example</title>
+  <link rel="stylesheet" href="style.css">
+
+  <template id="bws-card-template">
+    <style>
+      .bws-card {
+        background-color: #252525;
+        color: #dadada;
+        border-radius: 4px;
+        padding: 16px;
+        width: 400px;
+        box-shadow: 2px 2px 4px 0px #888888;
+        display: flex;
+        font-family: sans-serif;
+        margin-bottom: 8px;
+      }
+
+      .bws-card__picture {
+        border-radius: 50%;
+      }
+
+      .bws-card__text {
+        margin-left: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .bws-card__email {
+        color: #22acff;
+      }
+
+      .bws-card__actions {
+        flex: 1;
+        text-align: right;
+      }
+
+      .bws-card__actions--refresh {
+        background-color: #252525;
+        border: 2px solid white;
+        color: white;
+        border-radius: 4px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <div class="bws-card">
+      <img class="bws-card__picture"/>
+      <div class="bws-card__text">
+        <div class="bws-card__user"></div>
+        <div class="bws-card__email"></div>
+      </div>
+      <div class="bws-card__actions">
+        <button class="bws-card__actions--refresh">Refresh</button>
+      </div>
+    </div>
+  </template>
+</head>
+<body>
+  <h3>Users</h3>
+
+  <div class="users">
+    <bws-card
+      user="brad gibson"
+      email="brad.gibson@example.com"
+      picture="https://randomuser.me/api/portraits/thumb/men/75.jpg">
+    </bws-card>
+  </div>
+
+  <button id="addUser">Add user</button>
+
+  <script src="bws-card.js" type="module"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

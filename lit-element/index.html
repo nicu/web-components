@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+  <title>Web components example</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h3>Users</h3>
+
+  <div class="users">
+    <bws-card
+      dynamic="false"
+      user="brad gibson"
+      email="brad.gibson@example.com"
+      picture="https://randomuser.me/api/portraits/thumb/men/75.jpg">
+    </bws-card>
+  </div>
+
+  <button id="addUser">Add user</button>
+
+  <script src="bws-card.js" type="module"></script>
+  <script src="app.js" type="module"></script>
+</body>
+</html>
